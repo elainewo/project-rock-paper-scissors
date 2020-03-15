@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/7b691a6b0e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Rock , Paper , Scissors</h1>
+    </header>
+
+    <div class="score-board1">
+        <form action="">
+            <p class="small center">how many rounds?</p>
+            <div class="container" id="container">
+                <div class="form-container">
+                    <input type="radio" name="radio" id="five" value="5" onclick="getRounds()" checked>
+                    <label for="five" class="small left">5</label>
+                </div>
+                <div class="form-container">
+                    <input type="radio" name="radio" id="ten" value="10" onclick="getRounds()">
+                    <label for="ten" class="small left">10</label>
+                </div>
+                <div class="form-container">
+                    <input type="radio" name="radio" id="fifteen" value="15" onclick="getRounds()">
+                    <label for="fifteen" class="small left">15</label>
+                </div>
+                <div class="form-container">
+                    <input type="radio" name="radio" id="twenty" value="twenty" onclick="getRounds()">
+                    <label for="twenty" class="small left">20</label>
+                </div>
+
+            </div>
+        </form>
+        <div id="round-container">
+            <span id="round">0</span> / <span id="round-total"></span>
+        </div>
+
+    </div>
+
+    <div class="score-labels">
+
+        <p>USER</p>
+        <div id="board">
+            <p><span id="userCount">0</span>:<span id="compCount">0</span></p>
+        </div>
+        <p>COMP</p>
+
+    </div>
+
+    <div class="result" id="result">Let's play</div>
+
+    <div id="icons">
+        <span id="rockSpan"><i id="rock" class="far fa-hand-rock"></i></span>
+        <span id="paperSpan"><i id="paper" class="far fa-hand-paper"></i></span>
+        <span id="scissorsSpan"><i id="scissors" class="far fa-hand-scissors"></i></span>
+    </div>
+
+    <p>MAKE YOUR MOVE</p>
+
+    <div id="restart">Restart</div>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

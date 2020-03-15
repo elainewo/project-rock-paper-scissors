@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,500');
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #24272e;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+/* code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 12px;
+} */
+
+a {
+    font-family: 'Source Code Pro', monospace;
+    color: #ffcc99;
+}
+
+a:hover {
+    color: #ffba76;
+    text-decoration: underline;
+}
+
+header {
+    background: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    color: #444;
+    text-align: center;
+    font-weight: 100;
+}
+
+.score-board {
+    border: 3px solid #fff;
+    width: 300px;
+    margin: 40px auto;
+    font-size: 40px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.score-board1 {
+    border: 3px solid #fff;
+    width: 300px;
+    margin: 30px auto;
+    font-size: 40px;
+    border-radius: 4px;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.score-labels>p {
+    display: inline-block;
+    margin: 0 22%;
+    background: tomato;
+    padding: 2%;
+    text-align: center;
+    align-self: center;
+}
+
+.score-labels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 30%;
+}
+
+#board {
+    border: 3px solid #fff;
+    width: 300px;
+    margin: 0 auto;
+    font-size: 40px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.center {
+    text-align: center;
+}
+
+.result {
+    font-weight: 300;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 2%;
+}
+
+#result p {
+    font-size: 2rem;
+}
+
+/* .winningStyles {
+    border: 3px solid #4dcc7d;
+    background-color: #043507;
+    box-shadow: 0 0 20px #043507;
+}
+
+.losingStyles {
+    border: 3px solid #c52e2e;
+    background-color: #2e0303;
+    box-shadow: 0 0 20px #2e0303;
+}
+
+.drawStyles {
+    border: 3px solid #444;
+    background-color: #222;
+    box-shadow: 0 0 20px #222;
+} */
+
+.small {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.left {
+    text-align: left;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#round-container {
+    text-align: center;
+    display: none;
+}
+
+#icons {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 3rem;
+    padding: 3% 0;
+}
+
+#icons span:not(:nth-child(3)) {
+    margin-right: 2%;
+}
+
+#icons span {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding: 2.5% 3.5%;
+}
+
+#restart {
+    padding: 2%;
+}
