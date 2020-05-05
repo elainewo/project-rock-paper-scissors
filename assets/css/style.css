@@ -20,11 +20,6 @@ body {
     text-align: center;
 }
 
-/* code {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 12px;
-} */
-
 a {
     font-family: 'Source Code Pro', monospace;
     color: #ffcc99;
@@ -59,7 +54,7 @@ header h1 {
 
 .score-board1 {
     border: 3px solid #fff;
-    width: 300px;
+    width: 20%;
     margin: 30px auto;
     font-size: 40px;
     border-radius: 4px;
@@ -69,28 +64,29 @@ header h1 {
 
 .score-labels>p {
     display: inline-block;
-    margin: 0 22%;
     background: tomato;
-    padding: 2%;
+    padding: 1% 5%;
     text-align: center;
     align-self: center;
 }
 
 .score-labels {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 36%;
 }
 
 #board {
     border: 3px solid #fff;
-    width: 300px;
-    margin: 0 auto;
+    width: 71%;
+    margin: 0 -8%;
     font-size: 40px;
     border-radius: 4px;
     text-align: center;
     padding: 15px 20px;
     position: relative;
+    z-index: -999;
 }
 
 .center {
@@ -100,7 +96,7 @@ header h1 {
 .result {
     font-weight: 300;
     text-align: center;
-    font-size: 16px;
+    font-size: 2rem;
     margin-top: 2%;
 }
 
@@ -146,4 +142,37 @@ header h1 {
 
 #restart {
     padding: 2%;
+}
+
+/* Media Queries */
+
+@media (max-width: 991.98px) {
+    .score-board1 {
+        width: 36%;
+    }
+    .score-labels {
+        margin: 0 26%;
+    }
+    #icons {
+        margin: 4% auto;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .score-board1 {
+        width: 88%;
+    }
+    .score-labels {
+        margin: 0 3%;
+    }
+    #icons {
+        width: 80%;
+        margin: 6% auto;
+    }
+    #icons span {
+        padding: 2.5% 5.5%;
+    }
+    #restart {
+        margin: 3% 0;
+    }
 }
